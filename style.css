@@ -1,0 +1,158 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");      */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 30px;
+  color: white;
+  background: hsl(0, 100%, 74%) url("images/bg-intro-mobile.png");
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+main h1 {
+  font-weight: 700;
+  line-height: 45px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 1.5rem;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  line-height: 23px;
+}
+
+div.discount {
+  text-align: center;
+  padding: 15px 35px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  background-color: hsl(248, 32%, 49%);
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 1.5rem;
+}
+
+div.discount span {
+  font-weight: 700;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+input,
+.submit-button {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 12px;
+  color: hsl(249, 10%, 26%);
+  border: 1px solid hsl(246, 27%, 88%);
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+}
+
+.submit-button {
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0 1.5px hsl(0, 0%, 63%);
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  opacity: 0.8;
+}
+
+.terms-and-services {
+  font-weight: 400;
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.terms-and-services span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+.terms-and-services span:hover {
+  text-decoration: underline;
+}
+
+/*FOOTER*/
+footer {
+  margin-bottom: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/*FOR BIGGER DEVICES*/
+@media (min-width: 1000px) {
+  body {
+    background-image: url("images/bg-intro-desktop.png");
+  }
+
+  main {
+    width: 50%;
+    padding-left: 150px;
+  }
+  main h1 {
+    font-size: 40px;
+    width: 70%;
+    text-align: left;
+  }
+
+  main p {
+    font-size: 16px;
+    text-align: left;
+    width: 85%;
+    line-height: 30px;
+  }
+
+  .discount-form {
+    width: 40%;
+  }
+
+  form {
+    margin-bottom: 0;
+  }
+}
